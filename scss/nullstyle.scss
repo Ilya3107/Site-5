@@ -1,0 +1,86 @@
+/* Обнуление первоначальных настроек стилей в браузере */
+/* Обращаемся ко всем элементам верстки */
+* {
+  /*Убираем внутренние отступы*/
+  padding: 0;
+  /*Убираем внешние отступы*/
+  margin: 0;
+  /*Убираем границы*/
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  /*Меняет подсчёт ширины блока для удобства*/
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*Убираем линии обводки*/
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*Перечисляем некоторые тэги и добавляем им значение блочных*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*Уравниваем поведение шрифтов и элементов для разных браузеров, запрещают сомовольное увелечение шрифта*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Назначаем тэгам определенное семейство шрифта*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
